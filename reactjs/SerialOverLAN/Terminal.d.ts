@@ -9,6 +9,7 @@ export interface IPropTerminal {
     handleKeyDownPress: any;
 }
 declare class Term extends React.Component<IPropTerminal> {
+    mountedWorkaround: boolean;
     componentDidMount(): void;
     render(): React.ReactNode;
 }
